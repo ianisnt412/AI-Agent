@@ -4,8 +4,11 @@ from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 from sys_prompt import system_prompt
-from functions.declaration import schema_get_files_info
-from functions.declaration import available_functions
+from functions.schema_declaration import schema_get_files_info
+from functions.schema_declaration import schema_get_file_content
+from functions.schema_declaration import schema_run_python_file
+from functions.schema_declaration import schema_write_file
+from functions.schema_declaration import available_functions
 
 def main():
     load_dotenv()
